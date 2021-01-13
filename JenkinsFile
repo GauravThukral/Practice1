@@ -14,7 +14,7 @@ stages {
          }
          }
     steps {
-           sh echo "Dev Branch is selected"
+           echo "Dev Branch is selected"
            }
            }
            }
