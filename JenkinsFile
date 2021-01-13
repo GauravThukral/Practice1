@@ -1,0 +1,21 @@
+pipeline {
+
+agent any
+
+parameters {
+choice (name: 'BRANCH_NAME', choices:['Dev','Prod'], description: 'Select Branch Name')
+}
+
+stages {
+  stage ('Branch') {
+    when {
+      expression {
+         params.BRANCH_NAME = 'Dev'
+         }
+    steps {
+           echo "Dev Branch is selected"
+           }
+           }
+           }
+        } 
+
