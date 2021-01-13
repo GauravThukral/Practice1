@@ -13,7 +13,7 @@ stages {
          params.BRANCH_NAME = 'Dev'
          }
     steps {
-           echo "Dev Branch is selected"
+           sh echo "Dev Branch is selected"
            }
            }
            }
