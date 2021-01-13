@@ -7,10 +7,11 @@ choiceParam('BRANCH_NAME',['Dev','Prod'], description: 'Select Branch Name')
 }
 
 stages {
-  stage ('Branch') {
+  stage ("Branch") {
     when {
       expression {
-         params.BRANCH_NAME = 'Dev'
+         params.BRANCH_NAME == 'Dev'
+         }
          }
     steps {
            sh echo "Dev Branch is selected"
@@ -18,4 +19,3 @@ stages {
            }
            }
         } 
-}
