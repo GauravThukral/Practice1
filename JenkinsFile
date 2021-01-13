@@ -3,7 +3,7 @@ pipeline {
 agent any
 
 parameters {
-choice (name: 'BRANCH_NAME', choices:['Dev','Prod'], description: 'Select Branch Name')
+choiceParam('BRANCH_NAME',['Dev','Prod'], description: 'Select Branch Name')
 }
 
 stages {
