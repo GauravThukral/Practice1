@@ -14,7 +14,7 @@ stages {
          }
          }
     steps {
-           echo "Dev Branch is selected again nows"
+           echo "Dev Branch is selected again now"
            }
            }
            }
