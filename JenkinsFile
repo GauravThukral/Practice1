@@ -4,7 +4,7 @@ agent any
 
 parameters {
 choice(name: 'BRANCH_NAME',choices: ['Dev','Prod'], description: 'Select Branch Name')
-choce( name: 'ENVIRONMENT_NAME', choices: ['Dev,'Prod'], description: 'Select enviornment name')
+choice(name: 'ENVIRONMENT_NAME', choices: ['Dev,'Prod'], description: 'Select enviornment name')
 }
 
 stages {
